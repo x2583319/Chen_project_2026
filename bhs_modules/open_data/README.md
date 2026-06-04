@@ -1,3 +1,4 @@
+cat > bhs_modules/open_data/README.md <<'EOF'
 # BrainHack School 2026 Open Data Module
 
 ## Module
@@ -139,3 +140,39 @@ The initial inspection also showed why metadata QC is useful. Even in a public B
 such as comma-separated participant-level values and event files that describe long naturalistic segments rather than short trial-wise responses.
 
 This makes the open dataset a useful test case for building a more flexible, configurable QC workflow.
+
+## Small project extension: metadata summary script
+
+As a small extension beyond downloading the dataset files, I wrote a metadata-check script:
+
+    bhs_modules/open_data/check_open_data_metadata.py
+
+This script reads the downloaded OpenNeuro metadata files and generates a short report:
+
+    reports/open_data/open_data_metadata_summary.md
+
+The generated report found that:
+
+- `participants.tsv` contains 345 participant rows
+- the participant-level metadata columns are `participant_id`, `age`, `sex`, `task`, `condition`, and `comprehension`
+- `sub-001_scans.tsv` contains 4 scan rows
+- the scan-level metadata lists one anatomical file and three functional BOLD files
+- the downloaded event files contain the required BIDS timing columns `onset` and `duration`
+- the event files also contain `trial_type` and `stim_file`
+- the event files do not contain richer behavioral columns such as `decision` or `rt`
+- no missing values were found in the downloaded event files
+
+This extension connects the Open Data module directly to my BrainHack School project. Instead of only identifying an open dataset, I began testing whether the dataset's metadata structure can be inspected by the type of QC workflow I plan to build.
+
+The result also helped clarify the role of this dataset in my project. OpenNeuro `ds002345` is useful for testing general BIDS-style metadata inspection, including participant metadata, scan metadata, event timing, task labels, stimulus labels, and missingness. However, it is not a full substitute for the motivating lab dataset because it does not contain the same rich trial-wise decision and reaction-time metadata.
+
+## Note on relation to the Project Management module
+
+In the Project Management module, I used a public dataset as a FAIR-data discussion example. For the Open Data module, I selected OpenNeuro `ds002345` as a more project-specific validation candidate because it contains BIDS-style auditory/language fMRI metadata.
+
+Therefore, the two datasets serve slightly different purposes:
+
+- Project Management dataset: used to discuss FAIR principles and project organization
+- Open Data dataset: used as a public metadata-validation example for my QC workflow
+
+This distinction is intentional and reflects the development of the project idea.
