@@ -18,49 +18,49 @@ This license allows others to share and adapt the material, but requires attribu
 
 ## 2. FAIR public dataset example
 
-I chose the **Music Genre fMRI Dataset** on OpenNeuro, dataset ID `ds003720`.
+For the FAIR dataset exercise, I chose **OpenNeuro ds000102**, an event-related Flanker task fMRI dataset.
 
-This dataset includes fMRI data from five participants listening to music stimuli from ten genres. It is relevant to my BrainHack School project because my project explores genre-related brain responses and possible genre decoding from fMRI data.
+This dataset is **not my finalized BrainHack School 2026 project dataset**. In my project pitch, I noted that I had not yet chosen the public dataset that I would use to run or demonstrate my QC workflow. Therefore, I am using ds000102 here only as a public dataset example for the Project Management module, and as a possible candidate for later workflow testing.
+
+I chose this example because my BrainHack School 2026 project focuses on reproducible task-fMRI metadata and QC workflows. A public task-fMRI dataset is useful for thinking about project organization, metadata checking, events files, and reproducibility.
 
 ### Findable
 
-The dataset is findable because it is deposited in OpenNeuro with a dataset identifier (`ds003720`) and versioned releases. It also has a related Data in Brief data descriptor article, which makes it easier for researchers to discover and cite.
+The dataset is findable because it is deposited on OpenNeuro with a dataset identifier, `ds000102`. This makes it easier for researchers to locate, reference, and reuse.
 
 ### Accessible
 
-The data are accessible through OpenNeuro. The related paper also states that raw brain data are available through OpenNeuro, while behavioral data, presentation scripts, and stimuli preprocessing scripts are available through OSF.
+The dataset is accessible through OpenNeuro. Because it is publicly hosted, researchers can access it without needing access to a private lab server.
 
 ### Interoperable
 
-The brain data are organized using BIDS, which is a community standard for organizing neuroimaging data. This makes the dataset easier to inspect, preprocess, and reuse with standard neuroimaging tools.
+The dataset is organized in a way that supports standard neuroimaging workflows. This is important for my project because QC scripts depend on predictable file structures, metadata files, and task/event information.
 
 ### Reusable
 
-The dataset is reusable because it includes raw fMRI data, anatomical MRI data, behavioral data, and supporting scripts. The data descriptor explains the experimental design and data structure, including the training/test split and repeated test stimuli.
+The dataset is reusable because it contains public task-fMRI data that can be inspected, downloaded, and used for workflow testing or tutorial-style analysis. However, reuse still requires careful quality control. Public availability does not mean that every subject, run, or file is analysis-ready.
 
-Overall, I would consider this dataset reasonably FAIR. Its strongest FAIR features are accessibility through OpenNeuro, organization in BIDS format, and the availability of documentation through the data descriptor paper. One possible limitation is that users still need to carefully inspect the metadata and scripts before reanalysis, especially because music-stimulus licensing and preprocessing details may affect how the dataset can be reused.
+Overall, I would consider this dataset reasonably FAIR. It is findable through OpenNeuro, accessible as a public dataset, organized in a way that supports interoperability, and reusable for task-fMRI workflow testing. For my BrainHack School 2026 project, its role is only as a FAIR example and possible future external validation dataset, not as a finalized project dataset.
 
 ## 3. Open-science neuroimaging paper / project example
 
-I chose:
-
-**Nakai, T., Koide-Majima, N., & Nishimoto, S. “Music genre neuroimaging dataset.” Data in Brief.**
+For an open-science neuroimaging project example, I chose **OpenNeuro / OpenfMRI-style public neuroimaging data sharing**, using public task-fMRI datasets as an example.
 
 ### Code available?
 
-Partially yes. The related OSF project provides behavioral data, presentation software scripts, and stimuli preprocessing scripts. These are useful for understanding how the experiment was implemented and how stimuli were prepared.
+The amount of code available depends on the specific dataset. Some datasets include scripts or links to external repositories, while others mainly provide raw or minimally processed data. This shows why clear project management is important: code, dependencies, and expected directory structure should be documented when possible.
 
 ### Documentation for data analysis available?
 
-Yes. The Data in Brief article documents the dataset, participants, task design, scanning procedure, and data organization. The BIDS organization also provides machine-readable metadata that supports analysis documentation.
+Yes, public neuroimaging datasets usually include metadata files, task information, and dataset descriptions. However, the completeness of documentation can vary. This is why README files, environment files, and reproducible project organization are important.
 
 ### Data available?
 
-Yes. Raw brain data are available through OpenNeuro, and behavioral/supporting files are available through OSF.
+Yes. The data are publicly available through OpenNeuro.
 
 ### Standards followed
 
-The main standard followed is **BIDS** for neuroimaging data organization. The use of OpenNeuro and OSF also supports open-science practices by separating large neuroimaging files from supporting behavioral and script files while keeping both publicly accessible.
+The key standard is **BIDS**, the Brain Imaging Data Structure. BIDS helps make neuroimaging datasets easier to inspect, validate, preprocess, and reuse. For my project, this is especially relevant because I am interested in building tools that check task-fMRI metadata and event-level information.
 
 ## 4. Project template added to repository
 
