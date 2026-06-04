@@ -7,18 +7,20 @@ REPORT_DIR="reports"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 OUTFILE="${REPORT_DIR}/environment_snapshot_${TIMESTAMP}.txt"
 
-mkdir -p "$REPORT_DIR"
-
 if [ ! -d "$PROJECT_DIR" ]; then
   echo "Error: directory does not exist: $PROJECT_DIR"
   exit 1
 fi
 
+mkdir -p "$REPORT_DIR"
+
+PROJECT_ABS=$(cd "$PROJECT_DIR" && pwd)
+
 {
   echo "BHS Environment Snapshot"
   echo "========================"
   echo "Date: $(date)"
-  echo "Project directory: $(cd "$PROJECT_DIR" && pwd)"
+  echo "Project directory: $PROJECT_ABS"
   echo "Current directory: $(pwd)"
   echo "User: $(whoami)"
   echo ""
@@ -68,33 +70,37 @@ PY
   echo "Project file inventory"
   echo "----------------------"
 
-  echo "echo "Number of files by type:"
-  -path "$PROJECT_DIR/reports" -prune -o \
-  -type f -print | awk '
-    {
-      n = split($0, parts, ".")
-      if (n > 1) {
-        print parts[n]
-      } else {
-        print "no_extension"
-      }
-    }
-  ' | sort | uniq -c | sort -nrNumber of files by type:"
-  find "$PROJECT_DIR" -type f | sed 's/.*\.//' | sort | uniq -c | sort -nr
+  echo "Number of files by type:"
+  find "$PROJECT_ABS" \
+    -path "$PROJECT_ABS/.git" -prune -o \
+    -path "$PROJECT_ABS/reports" -prune -o \
+    -type f -print | while read -r file; do
+      case "$file" in
+        *.nii.gz)
+          echo "nii.gz"
+          ;;
+        *.*)
+          basename "$file" | awk -F. '{print $NF}'
+          ;;
+        *)
+          echo "no_extension"
+          ;;
+      esac
+    done | sort | uniq -c | sort -nr
 
   echo ""
   echo "Selected neuroimaging/data-related files:"
-  find "$PROJECT_DIR" \
-  -path "$PROJECT_DIR/.git" -prune -o \
-  -path "$PROJECT_DIR/reports" -prune -o \
-  -type f \( \
-    -name "*.nii" -o \
-    -name "*.nii.gz" -o \
-    -name "*.tsv" -o \
-    -name "*.csv" -o \
-    -name "*.json" -o \
-    -name "*.html" \
-  \) | sort
+  find "$PROJECT_ABS" \
+    -path "$PROJECT_ABS/.git" -prune -o \
+    -path "$PROJECT_ABS/reports" -prune -o \
+    -type f \( \
+      -name "*.nii" -o \
+      -name "*.nii.gz" -o \
+      -name "*.tsv" -o \
+      -name "*.csv" -o \
+      -name "*.json" -o \
+      -name "*.html" \
+    \) -print | sort
 
 } | tee "$OUTFILE"
 

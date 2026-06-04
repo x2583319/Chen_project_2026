@@ -1,6 +1,6 @@
 BHS Environment Snapshot
 ========================
-Date: Fri Jun  5 00:01:04 CST 2026
+Date: Fri Jun  5 00:16:29 CST 2026
 Project directory: /Users/chenxuan/Chen_project_2026
 Current directory: /Users/chenxuan/Chen_project_2026
 User: chenxuan
@@ -39,31 +39,8 @@ Python package check
 Project file inventory
 ----------------------
 Number of files by type:
-  11 sample
-   1 txt
    1 sh
+   1 no_extension
    1 md
-   1 git/refs/remotes/origin/main
-   1 git/refs/remotes/origin/HEAD
-   1 git/refs/heads/main
-   1 git/packed-refs
-   1 git/objects/a6/3a11704ff1845415916e06b7a0f14e7eb77233
-   1 git/objects/80/24c8be52ed47d8935ca8b6b3a9bba8c3401b01
-   1 git/objects/50/632a0762c0d0758d91630bf51be1ec3e666856
-   1 git/objects/42/decbe61164f8393534b7a44f5ddfb17b684f19
-   1 git/objects/34/12450b0bf54156c78bbd6d2c1f1f4fb282a396
-   1 git/objects/20/f786f90c966acdc89fcb1bccc24db757a70156
-   1 git/objects/1d/488f71148dba7294ca73b5e59048a9c8dbe81e
-   1 git/logs/refs/remotes/origin/main
-   1 git/logs/refs/remotes/origin/HEAD
-   1 git/logs/refs/heads/main
-   1 git/logs/HEAD
-   1 git/info/exclude
-   1 git/index
-   1 git/description
-   1 git/config
-   1 git/HEAD
-   1 git/COMMIT_EDITMSG
-   1 /LICENSE
 
 Selected neuroimaging/data-related files:
