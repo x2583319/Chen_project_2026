@@ -139,4 +139,3 @@ The initial inspection also showed why metadata QC is useful. Even in a public B
 such as comma-separated participant-level values and event files that describe long naturalistic segments rather than short trial-wise responses.
 
 This makes the open dataset a useful test case for building a more flexible, configurable QC workflow.
-EOF
