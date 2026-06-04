@@ -1,0 +1,14 @@
+BHS Project Inventory Report
+============================
+
+Project root: /Users/chenxuan/Chen_project_2026
+Total files scanned: 12
+Total size: 13162 bytes
+
+File counts by extension:
+-------------------------
+txt: 6
+py: 3
+no_extension: 1
+md: 1
+sh: 1

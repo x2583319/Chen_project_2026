@@ -1,0 +1,13 @@
+relative_path,extension,size_bytes
+LICENSE,no_extension,1066
+README.md,md,416
+bhs_modules/python_scripts/cypher_script.py,py,1218
+bhs_modules/python_scripts/official_message_decrypted.txt,txt,641
+bhs_modules/python_scripts/official_message_encrypted.txt,txt,1198
+bhs_modules/python_scripts/bhs_project_inventory.py,py,3863
+bhs_modules/python_scripts/message.txt,txt,16
+bhs_modules/python_scripts/message_decrypted.txt,txt,16
+bhs_modules/python_scripts/useful_functions.py,py,1351
+bhs_modules/python_scripts/message_encrypted.txt,txt,31
+scripts/00_environment_snapshot.sh,sh,2405
+reports/environment_snapshot_20260605_001629.txt,txt,941

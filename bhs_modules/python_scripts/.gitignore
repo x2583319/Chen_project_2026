@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+message.txt
+message_encrypted.txt
+message_decrypted.txt
+official_message_encrypted.txt
+official_message_decrypted.txt
