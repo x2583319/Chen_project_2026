@@ -40,8 +40,6 @@ The dataset is organized in a way that supports standard neuroimaging workflows.
 
 The dataset is reusable because it contains public task-fMRI data that can be inspected, downloaded, and used for workflow testing or tutorial-style analysis. However, reuse still requires careful quality control. Public availability does not mean that every subject, run, or file is analysis-ready.
 
-Overall, I would consider this dataset reasonably FAIR. It is findable through OpenNeuro, accessible as a public dataset, organized in a way that supports interoperability, and reusable for task-fMRI workflow testing. For my BrainHack School 2026 project, its role is only as a FAIR example and possible future external validation dataset, not as a finalized project dataset.
-
 ## 3. Open-science neuroimaging paper / project example
 
 For an open-science neuroimaging project example, I chose **OpenNeuro / OpenfMRI-style public neuroimaging data sharing**, using public task-fMRI datasets as an example.
