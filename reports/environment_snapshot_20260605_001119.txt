@@ -1,0 +1,81 @@
+BHS Environment Snapshot
+========================
+Date: Fri Jun  5 00:11:19 CST 2026
+Project directory: /Users/chenxuan/Chen_project_2026
+Current directory: /Users/chenxuan/Chen_project_2026
+User: chenxuan
+
+Shell information
+-----------------
+SHELL=/bin/zsh
+Bash version: 3.2.57(1)-release
+
+Command-line tools
+------------------
+[OK] bash: /bin/bash
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin22)
+
+[OK] git: /usr/local/bin/git
+git version 2.23.0
+
+[OK] python3: /Users/chenxuan/anaconda3/bin/python3
+Python 3.11.4
+
+[OK] conda: /Users/chenxuan/anaconda3/bin/conda
+conda 23.7.4
+
+[OK] code: /usr/local/bin/code
+1.122.1
+
+Python package check
+--------------------
+[OK] numpy: 1.26.4
+[OK] pandas: 2.1.4
+[OK] matplotlib: 3.7.1
+[OK] scipy: 1.15.2
+[OK] nibabel: 5.3.2
+[OK] nilearn: 0.10.4
+
+Project file inventory
+----------------------
+echo Number of files by type:
+  -path ./reports -prune -o   -type f -print | awk '
+    {
+      n = split(./scripts/00_environment_snapshot.sh, parts, .)
+      if (n > 1) {
+        print parts[n]
+      } else {
+        print no_extension
+      }
+    }
+  ' | sort | uniq -c | sort -nrNumber of files by type:
+  11 sample
+   2 txt
+   1 sh
+   1 md
+   1 git/refs/remotes/origin/main
+   1 git/refs/remotes/origin/HEAD
+   1 git/refs/heads/main
+   1 git/packed-refs
+   1 git/objects/a6/3a11704ff1845415916e06b7a0f14e7eb77233
+   1 git/objects/80/24c8be52ed47d8935ca8b6b3a9bba8c3401b01
+   1 git/objects/50/632a0762c0d0758d91630bf51be1ec3e666856
+   1 git/objects/42/decbe61164f8393534b7a44f5ddfb17b684f19
+   1 git/objects/34/12450b0bf54156c78bbd6d2c1f1f4fb282a396
+   1 git/objects/20/f786f90c966acdc89fcb1bccc24db757a70156
+   1 git/objects/1d/488f71148dba7294ca73b5e59048a9c8dbe81e
+   1 git/logs/refs/remotes/origin/main
+   1 git/logs/refs/remotes/origin/HEAD
+   1 git/logs/refs/heads/main
+   1 git/logs/HEAD
+   1 git/info/exclude
+   1 git/index
+   1 git/description
+   1 git/config
+   1 git/HEAD
+   1 git/COMMIT_EDITMSG
+   1 /LICENSE
+
+Selected neuroimaging/data-related files:
+./.git
+./reports
