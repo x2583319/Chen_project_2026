@@ -1,4 +1,3 @@
-cat > bhs_modules/open_data/README.md <<'EOF'
 # BrainHack School 2026 Open Data Module
 
 ## Module
