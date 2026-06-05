@@ -1,0 +1,11 @@
+{
+  "onset": {
+    "Description": "Event onset in seconds from the start of the run."
+  },
+  "duration": {
+    "Description": "Event duration in seconds."
+  },
+  "trial_type": {
+    "Description": "Synthetic auditory/music condition label."
+  }
+}

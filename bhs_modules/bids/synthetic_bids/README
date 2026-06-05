@@ -1,0 +1,3 @@
+This is a minimal synthetic BIDS dataset created for the BrainHack School 2026 BIDS module extension.
+
+The dataset contains one synthetic participant and one synthetic task events file for an auditory/music listening task. It is intended for practicing BIDS structure, event metadata, and validation with the BIDS Validator. It does not contain real participant data or neuroimaging files.

@@ -1,0 +1,8 @@
+{
+  "Name": "Minimal synthetic BIDS dataset for BrainHack School BIDS module",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "raw",
+  "Authors": [
+    "Chelsea Chen"
+  ]
+}
