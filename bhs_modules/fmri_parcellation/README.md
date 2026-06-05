@@ -40,7 +40,7 @@ The generated outputs are:
 - `outputs/atlas_audit_summary.json`
 - atlas visualization figures in `figures/`
 
-## Why this extension matters
+## About this extension
 
 Parcellation choice affects later fMRI analysis because the atlas defines the regions from which signals are extracted. A functional atlas such as Schaefer may be more suitable for connectivity or decoding workflows, while anatomical atlases such as Harvard-Oxford and AAL are easier to interpret anatomically. Probabilistic atlases such as MSDL require different handling from deterministic label atlases because their maps are 4D probability maps rather than a single 3D label image.
 
