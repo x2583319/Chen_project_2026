@@ -1,12 +1,12 @@
 bids-validator@1.15.0
-	[33m1: [WARN] The Authors field of dataset_description.json should contain an array of fields - with one author per field. This was triggered based on the presence of only one author field. Please ignore if all contributors are already properly listed. (code: 102 - TOO_FEW_AUTHORS)[39m
+	1: [WARN] The Authors field of dataset_description.json should contain an array of fields - with one author per field. This was triggered based on the presence of only one author field. Please ignore if all contributors are already properly listed. (code: 102 - TOO_FEW_AUTHORS)
 
-[36m	Please visit https://neurostars.org/search?q=TOO_FEW_AUTHORS for existing conversations about this issue.[39m
+	Please visit https://neurostars.org/search?q=TOO_FEW_AUTHORS for existing conversations about this issue.
 
-        [34m[4mSummary:[24m[39m              [34m[4mAvailable Tasks:[24m[39m        [34m[4mAvailable Modalities:[39m[24m 
+        Summary:              Available Tasks:        Available Modalities: 
         6 Files, 1.2KB                                MRI                   
         1 - Subject                                                         
         1 - Session                                                         
 
 
-[36m	If you have any questions, please post on https://neurostars.org/tags/bids.[39m
+	If you have any questions, please post on https://neurostars.org/tags/bids.
