@@ -1,0 +1,54 @@
+[
+  {
+    "atlas_name": "Schaefer 2018, 100 ROIs, 7 networks",
+    "atlas_family": "functional cortical parcellation",
+    "atlas_type": "not specified",
+    "template": "not specified",
+    "image_shape": "(91, 109, 91)",
+    "voxel_sizes_mm": "(2.0, 2.0, 2.0)",
+    "n_labels_reported": 100,
+    "n_unique_nonzero_values_3d_only": 100,
+    "map_source": "/Users/chenxuan/nilearn_data/schaefer_2018/Schaefer2018_100Parcels_7Networks_order_FSLMNI152_2mm.nii.gz",
+    "notes": "Useful for connectivity/decoding because parcels are functionally defined and relatively balanced.",
+    "figure_path": "/Users/chenxuan/Chen_project_2026/bhs_modules/fmri_parcellation/figures/Schaefer_2018,_100_ROIs,_7_networks.png"
+  },
+  {
+    "atlas_name": "Harvard-Oxford cortical maxprob 25%, 2mm",
+    "atlas_family": "anatomical cortical atlas",
+    "atlas_type": "not specified",
+    "template": "not specified",
+    "image_shape": "(91, 109, 91)",
+    "voxel_sizes_mm": "(2.0, 2.0, 2.0)",
+    "n_labels_reported": 49,
+    "n_unique_nonzero_values_3d_only": 48,
+    "map_source": "Nifti1Image object returned directly by Nilearn",
+    "notes": "Useful as an interpretable anatomical reference, but less functionally specific than Schaefer.",
+    "figure_path": "/Users/chenxuan/Chen_project_2026/bhs_modules/fmri_parcellation/figures/Harvard-Oxford_cortical_maxprob_25%,_2mm.png"
+  },
+  {
+    "atlas_name": "AAL SPM12",
+    "atlas_family": "anatomical atlas",
+    "atlas_type": "not specified",
+    "template": "not specified",
+    "image_shape": "(91, 109, 91)",
+    "voxel_sizes_mm": "(2.0, 2.0, 2.0)",
+    "n_labels_reported": 116,
+    "n_unique_nonzero_values_3d_only": 116,
+    "map_source": "/Users/chenxuan/nilearn_data/aal_SPM12/aal/atlas/AAL.nii",
+    "notes": "Common and easy to explain, but label indices are not always consecutive, so ROI handling needs care.",
+    "figure_path": "/Users/chenxuan/Chen_project_2026/bhs_modules/fmri_parcellation/figures/AAL_SPM12.png"
+  },
+  {
+    "atlas_name": "MSDL probabilistic atlas",
+    "atlas_family": "probabilistic functional atlas",
+    "atlas_type": "not specified",
+    "template": "not specified",
+    "image_shape": "(40, 48, 35, 39)",
+    "voxel_sizes_mm": "(4.0, 4.0, 4.0)",
+    "n_labels_reported": 39,
+    "n_unique_nonzero_values_3d_only": "4D/probabilistic",
+    "map_source": "/Users/chenxuan/nilearn_data/msdl_atlas/MSDL_rois/msdl_rois.nii",
+    "notes": "Useful for network-like spatial maps, but 4D/probabilistic atlases need different handling than label atlases.",
+    "figure_path": "/Users/chenxuan/Chen_project_2026/bhs_modules/fmri_parcellation/figures/MSDL_probabilistic_atlas.png"
+  }
+]
