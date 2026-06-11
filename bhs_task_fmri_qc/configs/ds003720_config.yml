@@ -1,0 +1,18 @@
+dataset: ds003720
+description: Music genre fMRI OpenNeuro smoke-test config
+
+timing_columns:
+  onset: onset
+  duration: duration
+
+event_columns:
+  - genre
+  - track
+  - start
+  - end
+
+file_checks:
+  match_events_to_bold: true
+  accepted_nifti_extensions:
+    - .nii
+    - .nii.gz

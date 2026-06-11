@@ -1,0 +1,19 @@
+dataset: ds000007
+description: Stop-signal task OpenNeuro smoke-test config
+
+timing_columns:
+  onset: onset
+  duration: duration
+
+event_columns:
+  - trial_type
+  - Response
+  - ReactionTime
+  - CorrectGo
+  - SuccStop
+
+file_checks:
+  match_events_to_bold: true
+  accepted_nifti_extensions:
+    - .nii
+    - .nii.gz
